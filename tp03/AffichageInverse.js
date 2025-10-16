@@ -5,10 +5,15 @@ for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
 }
 
+// pour séparer les affichages
+console.log ();
+
 // affichage des valeurs du tableau dans l'ordre inverse
 for (let i = array.length - 1; i >= 0; i--){
     console.log(array[i]);
 }
+
+console.log ();
 
 // duplication du tableau
 let array2 = array.slice();

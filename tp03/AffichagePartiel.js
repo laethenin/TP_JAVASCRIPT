@@ -7,6 +7,8 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 
+console.log();
+
 // affichage des valeurs paires
 for (let i = 0; i < array.length; i++) {
     if (array[i] % 2 === 0) {
@@ -14,12 +16,16 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 
+console.log();
+
 // affichage des valeurs dont l'index est pair
 for (let i = 0; i < array.length; i++) {
     if (i % 2 === 0) {
         console.log (array[i]);
     }
 }
+
+console.log();
 
 // affichage des valeurs impaires
 for (let i = 0; i < array.length; i++) {
