@@ -1,11 +1,18 @@
-let date1 = new Date (2018, 5, 18);
-let date2 = new Date (2021, 11, 2);
+function plusGrandeDate (date1, date2) {
+    let dateLaplusRecente ;
+        if (date1 > date2) {
+            dateLaplusRecente = date1;
+        }
 
-if (date1 > date2) {
-    console.log ("La date 1 est la plus récente.");
+        else {
+            dateLaplusRecente = date2;
+        }
+    return dateLaplusRecente;
 }
 
-else {
-    console.log ("La date 2 est la plus récente.");
-}
+let date1 = new Date (2021, 2, 11);
+let date2 = new Date (2018, 5, 18);
 
+let date = plusGrandeDate (date1, date2) ;
+
+console.log ("La date la plus récente est " + date);
