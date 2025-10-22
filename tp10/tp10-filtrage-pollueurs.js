@@ -1,0 +1,48 @@
+fetch('https://digicode.cleverapps.io/json/pays/pollution')
+        .then(function (res) {
+            return res.json();
+        }
+        )
+        .then(function (json) {
+            // j'affiche l'objet JSON dans ma console
+            console.log(json);
+
+            //j'appelle la fonction en lui donnant le JSON comme argument
+            initialiserDonnees (json);
+        }
+        );
+
+function initialiserDonnees(data) {
+
+    let titrePrincipal = document.querySelector("h1");
+    let titreSecondaire = document.querySelector("h2");
+
+    titrePrincipal.textContent = `Emissions de ${data.polluant} en ${data.unite}`;
+    titreSecondaire.textContent = `Pays les plus pollueurs pour l'année ${data.annee}`;
+
+    let corpsTableau = document.querySelector("tbody");
+    corpsTableau.innerHTML = "";
+
+    for (i = 0; i < data.pays.length; i++) {
+        let infos = data.pays[i];
+
+        let ligne = document.createElement("tr");
+        let caseNom = document.createElement("td");
+        let caseValeur = document.createElement("td");
+        let casePourcentage = document.createElement("td");
+
+        let image = document.createElement("img");
+        image.src = `https://flagcdn.com/24x18/${infos.code}.png`;
+        caseNom.appendChild(image);
+        caseNom.appendChild(document.createTextNode(infos.nom));
+
+        caseValeur.textContent = infos.valeur;
+        casePourcentage.textContent = infos.pourcentage;
+
+        ligne.appendChild(caseNom);
+        ligne.appendChild(caseValeur);
+        ligne.appendChild(casePourcentage);
+
+        corpsTableau.appendChild(ligne);
+    }
+}

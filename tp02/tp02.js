@@ -1,13 +1,13 @@
 // déclaration des variables
-let num1 = 25;
-let num2 = 4;
+const num1 = 25;
+const num2 = 4;
 
 // réalisation des opérations mathématiques
-let addition = num1 + num2;
-let soustraction = num1 - num2;
-let multiplication = num1 * num2;
-let division = num1 / num2;
-let modulo = num1 % num2;
+const addition = num1 + num2;
+const soustraction = num1 - num2;
+const multiplication = num1 * num2;
+const division = num1 / num2;
+const modulo = num1 % num2;
 
 // affichage des résultats dans la console
 console.log (addition);

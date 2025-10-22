@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pollueurs</title>
-    <script src="tp08-tableau-pays.js"></script>
+    <title>Afficher des infos sous forme de tableau</title>
+    <script src="tp09-affichagePaysInfosTableau.js" defer></script>
     <style>
         table {
             width: 80%;
@@ -15,24 +15,17 @@
         th, td {
             border: 1px solid black;
         }
-
-        th.valeurs,
-        th.pourcentage {
-            text-align: left;
-        }
     </style>
 </head>
 
-<body onload="initialiserDonnees()">
-    <h1 id="titre"></h1>
-    <h2 id="annee"></h2>
-
+<body>
+    <h1>Les pays, leur population, leur région</h1>
     <table>
         <thead>
             <tr>
                 <th>Nom</th>
-                <th>Valeur</th>
-                <th>%</th>
+                <th>Population</th>
+                <th>Région</th>
             </tr>
         </thead>
 

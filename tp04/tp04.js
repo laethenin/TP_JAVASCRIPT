@@ -12,10 +12,12 @@ let societe = { "nom": "Google",
                 ]
 }
 
+// affichage des fondateurs
 for (let i = 0; i < societe.fondateurs.length; i++) {
     console.log (""+societe.fondateurs[i].nom + " est l'un des deux fondateurs de Google.");
 }
 
+// affichage des chiffres d'affaires
 for (let i=0; i < societe.chiffreDaffaires.length; i++) {
     console.log ("Le chiffre d'affaires en " + societe.chiffreDaffaires[i].annee + " est de " + societe.chiffreDaffaires[i].chiffreAffaires + " milliards de dollars.");
 }
