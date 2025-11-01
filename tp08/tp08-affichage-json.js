@@ -1,5 +1,5 @@
 function initialiserDonnees () {
-    // données sous forme d'objet JSON
+    // données sous forme d'objet JSON//
     let data = {
         "polluant": "CO2",
         "unite": "milliards de tonnes",
@@ -15,23 +15,23 @@ function initialiserDonnees () {
         { "nom": "Canada", "valeur": 0.55, "pourcentage": 1.7, "code": "ca" }]
     }
 
-    // sélections des éléments h1 et h2 pour les modifier
+    // sélections des éléments h1 et h2 pour les modifier//
     let titrePrincipal = document.querySelector("h1");
     let titreSecondaire = document.querySelector("h2");
     
-    // change le texte dans les éléments
+    // change le texte dans les éléments//
     titrePrincipal.textContent = `Emissions de ${data.polluant} en ${data.unite}`;
     titreSecondaire.textContent = `Relevés de l'année ${data.annee}`;
 
     let span = document.querySelector("span");
     let infosPays = "" ;
 
-    // boucle pour récupérer les infos de chaque pays
+    // boucle pour récupérer les infos de chaque pays//
     for (i=0; i < data.pays.length; i++) {
         let infos = data.pays[i];
         infosPays += `${infos.nom} : ${infos.valeur} ${data.unite}, ${infos.pourcentage} % (pourcentage mondial).<br>`;
     }
 
-    // change la span pour afficher les résultats de la boucle
+    // change la span pour afficher les résultats de la boucle//
     span.innerHTML = infosPays;
 }

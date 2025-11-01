@@ -13,16 +13,19 @@ function lancerOperation () {
     resultatElement.innerHTML = "";
     errorElement.innerHTML = "";
     
-    // vérifie que les saisies sont des nombres
-    if (Number.isNaN(numA) && Number.isNaN(numB)) {
+    // vérifie que les saisies sont des nombres//
+    if (Number.isNaN(numA) || Number.isNaN(numB)) {
         errorElement.innerHTML = `Vous devez saisir uniquement des nombres`;
-        resultatElement.innerHTML = "";
-    }
-    else {
-        errorElement.innerHTML = "";
+        return;
     }
 
-    // condition en fonction du type d'opérateur
+    // vérifie pour la division qu'elle soit possible//
+    if (operateur.value === "/" && numB === 0) {
+        errorElement.innerHTML = `Division par zéro impossible`;
+        return;
+    }
+
+    // condition en fonction du type d'opérateur//
     switch(operateur.value) {
         case "+" :
             resultat = numA + numB;

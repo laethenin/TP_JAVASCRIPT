@@ -1,4 +1,4 @@
-// choix du fetch pour appeler les données
+// choix du fetch pour appeler les données//
 fetch('https://restcountries.com/v2/all?fields=name,languages,region,flag,population,currencies')
         .then(function (res) {
             return res.json();

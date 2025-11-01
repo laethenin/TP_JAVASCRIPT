@@ -16,14 +16,14 @@ function verifTab (tab) {
     
 }
 
-let tab1 = [1, 2, 3, 4, 5, 6];
+const tab1 = [1, 2, 3, 4, 5, 6];
 let verif1 = verifTab (tab1);
 console.log (verif1);
 
-let tab2 = [1, 3, "cinq", 7, "neuf"];
+const tab2 = [1, 3, "cinq", 7, "neuf"];
 let verif2 = verifTab (tab2);
 console.log (verif2);
 
-let tab3 = [];
+const tab3 = [];
 let verif3 = verifTab (tab3);
 console.log (verif3);

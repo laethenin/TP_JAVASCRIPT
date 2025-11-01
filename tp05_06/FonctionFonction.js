@@ -1,19 +1,20 @@
 function valeur (n) {
     return function multiplication (nb) {
-        let resultat = n*nb;
-        return resultat;
+        return resultat = n * nb;
     }
 }
 
-let n1 = 6;
-let n2 = 12
+const n1 = 6;
+const n2 = 12
+/// on appelle la fonction valeur qui se souviendra de n et multipliera le second nombre avec cette valeur///
 let operation1 = valeur (n1);
 let operation2 = valeur (n2);
 console.log (operation1);
 console.log (operation2);
-// renvoie à chaque fois [Function : multiplication]
+// renvoie à chaque fois [Function : multiplication] car en attente d'un second nombre//
 
-let nb = 5;
+const nb = 5;
+// on multiplie 5 avec chacune des deux valeurs passées en amont//
 let resultat1 = operation1 (nb);
 let resultat2 = operation2 (nb);
 console.log (resultat1);

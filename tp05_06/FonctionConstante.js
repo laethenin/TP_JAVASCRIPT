@@ -1,8 +1,8 @@
-function nombre () {
-    const valeur = 33;
-    return valeur;
+function valeurConstante () {
+    const nombre = 33;
+    return nombre;
 }
 
-let valeur = nombre ();
+const valeur = valeurConstante();
 
 console.log (valeur);

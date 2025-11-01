@@ -1,5 +1,5 @@
 
-// via la fonction, appel des données 
+// via la fonction, appel des données avec une méthode request//
 function afficherDonnees() {
     let req = new XMLHttpRequest();
     req.open('GET', 'https://restcountries.com/v2/all?fields=name,languages,region,flag,population,currencies');

@@ -10,8 +10,8 @@ function plusGrandeDate (date1, date2) {
     return dateLaplusRecente;
 }
 
-let date1 = new Date (2021, 2, 11);
-let date2 = new Date (2018, 5, 18);
+const date1 = new Date (2021, 11, 2);
+const date2 = new Date (2018, 5, 18);
 
 let date = plusGrandeDate (date1, date2) ;
 

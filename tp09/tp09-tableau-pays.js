@@ -1,6 +1,6 @@
-// appel des données via le fetch avec un type de réponse "res.json"
-// pour avoir des données au format JSON (vu dans le cours "les différents
-// types de réponse")
+// appel des données via le fetch avec un type de réponse "res.json"//
+// pour avoir des données au format JSON (vu dans le cours "les différents//
+// types de réponse")//
 fetch('https://digicode.cleverapps.io/json/pays/pollution')
         .then(function (res) {
             return res.json();
@@ -15,7 +15,7 @@ fetch('https://digicode.cleverapps.io/json/pays/pollution')
         }
         );
 
-// cette partie là provient du tp08 correspondant
+// cette partie là provient du tp08 correspondant//
 function initialiserDonnees(data) {
 
     let titrePrincipal = document.querySelector("h1");

@@ -8,9 +8,10 @@ function moyenneTab(tab) {
         console.log(e);
     }
 
-    let message;
+
     if (tab.length === 0) {
-        return message = 0;
+        let message = 0;
+        return message;
     }
 
     let somme = 0;

@@ -21,7 +21,18 @@
 <body>
     <h1 id="titre"></h1>
     <h2 id="annee"></h2>
-    
+
+    <label for="min">Minimum</label>
+    <input type="number" id="min" name="min">
+
+    <label for="max">Maximum</label>
+    <input type="number" id="max" name="max">
+
+    <button type="submit" onclick="filtrer()">Valider</button>
+    <br>
+    <span id="erreur"></span>
+    <br><br>
+
     <table>
         <thead>
             <tr>

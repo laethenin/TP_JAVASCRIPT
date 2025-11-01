@@ -1,17 +1,17 @@
 function salutations (prenom) {
     let phrase = "Bonjour " + prenom ;
-    let message;
     // ajout pour tp06
         if (typeof (prenom) !== 'string') {
-            return message = "erreur, vous devez donner du texte";
+            let message = "erreur, vous devez donner du texte";
+            return message;
         }
     return phrase; 
 }
 
-let prenom = "Laetitia";
-let phrase = salutations (prenom);
-console.log (phrase);
+const prenom = "Laetitia";
+const salut1 = salutations (prenom);
+console.log (salut1);
 
-let prenom2 = 666;
-let phrase2 = salutations (prenom2);
-console.log (phrase2);
+const prenom2 = 666;
+const salut2 = salutations (prenom2);
+console.log (salut2);
