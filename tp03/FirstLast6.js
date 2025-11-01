@@ -1,4 +1,4 @@
-let array = [4, 8, 15, 16, 23, 46, 6];
+const array = [4, 8, 15, 16, 23, 46, 6];
 
 // vérifie que le tableau n'est pas vide et que soit
 // la première valeur est égale à 6 ou

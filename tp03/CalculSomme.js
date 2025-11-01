@@ -1,4 +1,4 @@
-let n = 15;
+const n = 15;
 let somme = 0;
 
 // calcul de la somme des nombres de 1 à n
