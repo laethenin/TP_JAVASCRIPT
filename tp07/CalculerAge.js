@@ -1,6 +1,6 @@
 function calculerAge(dateNaissance, dateJour) {
-    let ageAnnees = (dateJour.getFullYear() - dateNaissance.getFullYear());
-    let ageMois = (dateJour.getMonth() - dateNaissance.getMonth());
+    const ageAnnees = (dateJour.getFullYear() - dateNaissance.getFullYear());
+    const ageMois = (dateJour.getMonth() - dateNaissance.getMonth());
     return {
         ageAnnees,
         ageMois
